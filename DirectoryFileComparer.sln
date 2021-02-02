@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1231
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCompare", "DirectoryFileCompearer\DirectoryCompare.csproj", "{7A3C7197-B19B-43C3-A610-838FB5CE3003}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCompare", "DirectoryFileComparer\DirectoryCompare.csproj", "{7A3C7197-B19B-43C3-A610-838FB5CE3003}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCompareTest", "DirectoryCompareTest\DirectoryCompareTest.csproj", "{3E16DBC7-4F15-4051-A790-507EB96E32BB}"
 EndProject
