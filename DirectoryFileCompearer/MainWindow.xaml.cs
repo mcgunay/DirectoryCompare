@@ -1,19 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
-namespace DirectoryFileCompearer
+
+namespace DirectoryCompare
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,5 +12,29 @@ namespace DirectoryFileCompearer
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var dir1 = directory1Tb.Text;
+            var dir2 = directory2Tb.Text;
+
+            if (string.IsNullOrEmpty(dir1) || string.IsNullOrEmpty(dir2))
+            {
+                MessageBox.Show("Pick two directory to compare", "Directory Compare", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+               
+            var result = DirectoryComparer.CompareDirectories(dir1, dir2);
+
+            resultTb.Text = string.Empty;
+
+            foreach (var item in result)
+            {
+                resultTb.Text += item + "\n\n";
+            } 
+
+        }
+
+       
     }
 }

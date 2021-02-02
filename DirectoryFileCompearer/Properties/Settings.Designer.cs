@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DirectoryFileCompearer.Properties
+namespace DirectoryCompare.Properties
 {
 
 
